@@ -4,9 +4,9 @@
 ![hitesh choudhary](https://img.shields.io/badge/Hitesh--Choudhary-Full--stack--JS--bootcamp-red)
 
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-orange)
-![Live class](https://img.shields.io/badge/LIVE--CLASS-PROJECT--10-lightgrey)
+![Live class](https://img.shields.io/badge/Project-10-interior-design-lightgrey)
 
-![name](https://img.shields.io/badge/Kaushal--Mehta-MCA--last--year-lightgrey)
+![name](https://img.shields.io/badge/Pradip-Kafle-lightgrey)
 
 ## Project 10 [Live Link](https://live-proj-10.netlify.app)
 
@@ -17,8 +17,9 @@
 
 ## Time taken to finish this project
 
-- 1 hour taken to complete it.
+- 2 ur taken to complete it.
 
 #### Screenshot
 
-![Desktop](./screenshots/project-10.png)
+![Desktop](./demo/desktopdemo.png)
+![Mobile](./demo/mobiledemo.png)
