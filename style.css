@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/bg.jpg");
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  margin: auto;
+  height: 75vh;
+}
+.navbar {
+  display: flex;
+  margin: 20px;
+}
+.logo img {
+  width: 65px;
+  margin-left: 2px;
+}
+.list {
+  visibility: visible;
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.list ::after {
+  content: "";
+  height: 2px;
+  width: 16rem;
+  background-color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 107px;
+}
+
+.list .list-item:last-child {
+  visibility: hidden;
+}
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+  margin-left: 20px;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  margin: 20px 0px;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.left {
+  margin-top: 100px;
+}
+.right {
+  margin: 10px;
+}
+.square {
+  position: absolute;
+  background-color: #727578;
+  display: inline-block;
+  padding: 10px;
+  top: 100px;
+}
+.square:first-child {
+  position: relative;
+  background-color: #727578;
+  display: inline-block;
+  right: 5px;
+  padding: 10px;
+  z-index: -1;
+  top: 100px;
+}
+.square:last-child {
+  position: relative;
+  background-color: #727578;
+  display: inline-block;
+  right: 5px;
+  padding: 10px;
+  top: -20px;
+}
+.square:first-child::after {
+  content: "";
+  background-color: #fff;
+  width: 2px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 244px;
+  transform: rotate(90deg);
+}
+.square:last-child::after {
+  content: "";
+  background-color: #fff;
+  width: 2px;
+  height: 50px;
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  transform: rotate(180deg);
+}
+.square:first-child .circle-line {
+  background-color: #fff;
+  height: 20px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 270px;
+}
+.square:last-child .circle-line {
+  background-color: #fff;
+  height: 20px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 145px;
+}
+.icon {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 25px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Media query */
+@media only screen and (min-width: 760px) {
+  body {
+    height: 100vh;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+  }
+  .list .list-item:last-child {
+    visibility: visible;
+  }
+  .logo img {
+    width: 75%;
+    margin-left: 2px;
+  }
+  .list {
+    gap: 30px;
+  }
+  .list-item:last-child {
+    text-align: center;
+  }
+  .list-item p:last-child {
+    margin-top: 3px;
+  }
+  .list ::after {
+    content: "";
+    height: 2px;
+    width: 50rem;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: auto;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    font-size: 3rem;
+    margin-top: 250px;
+  }
+  button {
+    padding: 15px 35px;
+    border-radius: 40px;
+  }
+  .right .square {
+    padding: 30px 80px 30px 20px;
+  }
+  .square:first-child {
+    position: relative;
+    left: 400px;
+    top: 100px;
+  }
+  .square:last-child {
+    position: relative;
+    right: 250px;
+    top: 450px;
+  }
+
+  .square:first-child::after {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 100px;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+    transform: rotate(180deg);
+  }
+  .square:last-child::after {
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 310px;
+    transform: rotate(90deg);
+  }
+  .square:last-child .circle-line {
+    top: 40px;
+    left: 350px;
+  }
+  .square:first-child .circle-line {
+    top: 210px;
+    left: 195px;
+  }
+}
